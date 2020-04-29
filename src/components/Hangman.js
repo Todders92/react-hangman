@@ -16,7 +16,7 @@ class Hangman extends React.Component {
       mistake: 0,
       // winState: false,
       // loseState: false,
-      guessed: new Set([" "]),
+      guessed: new Set([]),
       answer: randomWord()
     }
   }
