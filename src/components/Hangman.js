@@ -32,6 +32,7 @@ class Hangman extends React.Component {
   guessedWord() {
     return this.state.answer.split("").map(letter => (this.state.guessed.has(letter) ? letter : " _ "));
   }
+
   // guessedWord() {
   //   return this.state.answer.split("").map(letter => {
   //     if (this.state.guessed.has(letter) && letter != " "){
@@ -42,8 +43,6 @@ class Hangman extends React.Component {
   //     } else {
   //       return "_ ";
   //     }
-     
-     
       // if(letter === " ") {
       //   return letter;
       // }
@@ -57,10 +56,7 @@ class Hangman extends React.Component {
   // // 'e' 
   // // ignore spaces 
   // ['h', '_', ' ','_'] 
-
-
 //  answer.replace(" ", "");
-
 
   generateButtons() {
     return "abcdefghijklmnopqrstuvwxyz".split("").map(letter => (
@@ -119,12 +115,7 @@ class Hangman extends React.Component {
       </div>
     </div>
     )
-
-
-
   }
-
-
 }
 
 export default Hangman;
